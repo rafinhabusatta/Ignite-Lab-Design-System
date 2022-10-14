@@ -2,7 +2,11 @@ name: Deploy Storybook
 
 on:
   push:
+<<<<<<< HEAD
     branches:
+=======
+    branches: 
+>>>>>>> 8967bd0167f18aa44c281318c75f87adb09c2da5
       - main
 
 jobs:
