@@ -2,8 +2,7 @@ name: Deploy Storybook
 
 on:
   push:
-    branches:
-      - main
+    branches: -main
 
 jobs:
   build-and-deploy:
@@ -22,7 +21,7 @@ jobs:
         run: npm ci
 
       - name: Build Storybook
-        run: npm run run build-storybook
+        run: npm run build-storybook
 
       - name: Deploy Storybook
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
